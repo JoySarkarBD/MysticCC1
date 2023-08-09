@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url("./assets/main-bg.jpg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  @apply max-w-[2520px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4 !h-full;
+}
+
+/* DataTableStyles.css */
+
+/* Custom styles for react-data-table-component */
+.rdt_Table,
+.rdt_TableRow,
+.rdt_TableCol,
+.rdt_TableCol_Sortable,
+.rdt_TableCell,
+.rdt_TableHeader,
+.rdt_TableFooter,
+.rdt_TableHead,
+.rdt_TableHeadRow,
+.rdt_TableBody,
+.rdt_ExpanderRow,
+.rdt_Pagination {
+  background: #292053 !important;
+  color: white !important;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.rdt_TableHeader {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#pagination-previous-page,
+#pagination-next-page,
+#pagination-last-page,
+#pagination-first-page svg {
+  fill: white !important;
+}

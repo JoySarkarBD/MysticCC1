@@ -10,19 +10,11 @@ import Supports from "../pages/Supports/Supports";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/dashboard",
     element: <Layout />,
     children: [
       {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "signup",
-        element: <SignUp />,
-      },
-      {
-        path: "dashboard",
+        path: "/dashboard",
         element: <Dashboard />,
       },
       {
@@ -42,5 +34,13 @@ export const router = createBrowserRouter([
         element: <Supports />,
       },
     ],
+  },
+  {
+    path: "/",
+    element: <Login />,
+  },
+  {
+    path: "signup",
+    element: <SignUp />,
   },
 ]);

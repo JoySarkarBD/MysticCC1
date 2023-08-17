@@ -29,9 +29,7 @@ const Navbar = () => {
               tabIndex={0}
               className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-[#231b49b3] text-white '>
               <li>
-                <Link
-                  to='/dashboard'
-                  className='flex justify-start items-center mx-5'>
+                <Link to='/' className='flex justify-start items-center mx-5'>
                   <img src={dashboardImg} alt='' />
                   <span className='font-normal text-lg pl-1'> Dashboard</span>
                 </Link>
@@ -68,7 +66,7 @@ const Navbar = () => {
           </div>
           {/* nav left */}
           <div className='lg:flex lg:items-center  hidden'>
-            <Link to='/dashboard' className='flex items-center mx-5 '>
+            <Link to='/' className='flex items-center mx-5 '>
               <img src={dashboardImg} alt='' className='w-[35px] h-[35px]  ' />
               <span className='font-normal text-lg xl:text-lg pl-1 lg:text-base '>
                 {" "}

@@ -10,11 +10,11 @@ import Supports from "../pages/Supports/Supports";
 
 export const router = createBrowserRouter([
   {
-    path: "/dashboard",
+    path: "/",
     element: <Layout />,
     children: [
       {
-        path: "/dashboard",
+        path: "/",
         element: <Dashboard />,
       },
       {
@@ -36,11 +36,11 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: "/",
+    path: "/login",
     element: <Login />,
   },
   {
-    path: "signup",
+    path: "/signup",
     element: <SignUp />,
   },
 ]);
